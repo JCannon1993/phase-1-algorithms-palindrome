@@ -1,5 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+ let letters = []
+ let rword = ''
+
+ for (let i=0; i<word.length; i++){
+  letters.push(word[i])
+  console.log('word iteration' , word[i])
+  console.log('word array', letters)
+ }
+ for(let i=0; i<word.length; i++){
+  rword += letters.pop()
+  console.log('2 nd loop word array', letters)
+  console.log('reversed word' , rword)
+ }
+ return word === rword
 }
 
 /* 
